@@ -1,0 +1,94 @@
+body {
+  margin: 0;
+}
+* {
+  box-sizing: border-box;
+}
+
+section {
+  width: 100%;
+  min-height: 100vh;
+}
+section article {
+  width: 100%;
+  height: 10vh;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  position: relative;
+  margin-bottom: 50px;
+}
+.nomPoke {
+  position: absolute;
+  height: 10vh;
+  width: 15%;
+  min-width: 180px;
+  left: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
+.fas {
+  color: #2c3e50;
+  font-size: 30px;
+}
+.fas {
+  cursor: pointer;
+}
+p {
+  font-family: "Raleway", sans-serif;
+  font-size: 3vmin;
+  width: 700px;
+  max-width: 50%;
+}
+
+.description {
+  min-height: 70vh;
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  animation: deroule linear 0.5s;
+}
+@keyframes deroule {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.imgPoke {
+  width: 400px;
+  height: auto;
+  max-width: 40%;
+}
+@media (max-width: 850px) {
+  p {
+    font-size: 20px;
+  }
+}
+@media (max-width: 500px) {
+  p {
+    font-size: 15px;
+    max-width: 70%;
+  }
+  .description {
+    flex-wrap: wrap;
+  }
+  .imgPoke {
+    max-width: 80%;
+  }
+}
+@media (max-width: 320px) {
+  p {
+    font-size: 15px;
+    max-width: 70%;
+  }
+  .description {
+    flex-wrap: wrap;
+  }
+  .imgPoke {
+    max-width: 60%;
+  }
+}
