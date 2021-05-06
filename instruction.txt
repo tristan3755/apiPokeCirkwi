@@ -1,0 +1,5 @@
+Pour déployer l'application, créez une nouvelle base de donnée dans phpMyAdmin. Par la suite allez sur l'onglet importer puis 
+cliquez sur choisir un fichier. Selectionnez apicirkwi.sql puis validez avce le bouton exécuter. Les tables vont se créer. 
+Par la suite allezdans le fichier:api.php et dans la connexion 
+"$dbh=new PDO ('mysql:host=localhost; dbname=apiCirkwi;charset=utf8',
+'root','',)" remplacez le dbname par le nom de votre base de données (ainsi que mot de passe et nom utilisateur).
